@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paw House 宠物之家</title>
+  <meta name="description" content="Paw House 宠物之家，为宠物提供洗护、美容、寄养及宠物用品服务。">
+</head>
+
+<body>
+
+  <!-- ==================== 顶部导航 ==================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="#home" class="logo">
+        <span class="logo-icon">🐾</span>
+        <span>
+          <strong>Paw House</strong>
+          <small>宠物之家</small>
+        </span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#home">首页</a>
+        <a href="#shop">宠物商城</a>
+        <a href="#services">服务预约</a>
+        <a href="#member">会员中心</a>
+        <a href="#about">关于我们</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="openSearch">
+          🔍
+        </button>
+
+        <button type="button" class="cart-btn" id="openCart">
+          🛒
+          <span>购物车</span>
+          <b id="cartCount">0</b>
+        </button>
+
+        <button type="button" class="login-btn" id="openLogin">
+          登录 / 注册
+        </button>
+
+        <button type="button" class="user-btn hidden" id="openMember">
+          👤 <span id="headerUserName">我的账户</span>
+        </button>
+
+        <button type="button" class="menu-btn" id="openMobileMenu">
+          ☰
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ==================== 移动端菜单 ==================== -->
+  <div class="mobile-menu hidden" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <button type="button" class="close-btn" id="closeMobileMenu">×</button>
+
+      <a href="#home">首页</a>
+      <a href="#shop">宠物商城</a>
+      <a href="#services">服务预约</a>
+      <a href="#member">会员中心</a>
+      <a href="#about">关于我们</a>
+
+      <button type="button" id="mobileLoginBtn">
+        登录 / 注册
+      </button>
+    </div>
+  </div>
+
+
+  <!-- ==================== 搜索 ==================== -->
+  <section class="search-panel hidden" id="searchPanel">
+    <div class="container">
+
+      <div class="search-box">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="搜索宠物用品、零食、玩具..."
+        >
+
+        <button type="button" id="searchButton">
+          搜索
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <main>
+
+    <!-- ==================== 首页 ==================== -->
+    <section class="hero" id="home">
+
+      <div class="container hero-content">
+
+        <div class="hero-text">
+
+          <span class="hero-tag">
+            🐾 用心照顾每一个毛孩子
+          </span>
+
+          <h1>
+            给宠物一个<br>
+            <strong>温暖的家</strong>
+          </h1>
+
+          <p>
+            Paw House 宠物之家，为您的爱宠提供专业洗护、美容、
+            寄养以及优质宠物用品，让每一次陪伴都更加安心。
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#shop" class="primary-btn">
+              进入商城
+            </a>
+
+            <a href="#services" class="secondary-btn">
+              预约服务
+            </a>
+
+          </div>
+
+          <div class="hero-data">
+
+            <div>
+              <strong>1000+</strong>
+              <span>服务宠物</span>
+            </div>
+
+            <div>
+              <strong>5年+</strong>
+              <span>专业经验</span>
+            </div>
+
+            <div>
+              <strong>100%</strong>
+              <span>用心服务</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+          <div class="hero-pet-card">
+
+            <div class="hero-pet-image">
+              🐶
+            </div>
+
+            <div class="hero-pet-info">
+              <strong>欢迎来到 Paw House</strong>
+              <span>让宠物快乐，让主人放心</span>
+            </div>
+
+          </div>
+
+          <div class="floating-card floating-card-one">
+            ❤️ <span>安心护理</span>
+          </div>
+
+          <div class="floating-card floating-card-two">
+            ⭐ <span>会员专享</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== 快捷入口 ==================== -->
+    <section class="quick-section">
+
+      <div class="container quick-grid">
+
+        <a href="#shop" class="quick-card">
+          <span class="quick-icon">🛍️</span>
+          <span>
+            <strong>宠物商城</strong>
+            <small>宠物用品一站购</small>
+          </span>
+          <b>→</b>
+        </a>
+
+        <a href="#services" class="quick-card">
+          <span class="quick-icon">🛁</span>
+          <span>
+            <strong>洗护美容</strong>
+            <small>专业宠物护理</small>
+          </span>
+          <b>→</b>
+        </a>
+
+        <a href="#services" class="quick-card">
+          <span class="quick-icon">🏠</span>
+          <span>
+            <strong>宠物寄养</strong>
+            <small>安心寄养服务</small>
+          </span>
+          <b>→</b>
+        </a>
+
+        <a href="#member" class="quick-card">
+          <span class="quick-icon">💳</span>
+          <span>
+            <strong>会员中心</strong>
+            <small>会员权益与储值</small>
+          </span>
+          <b>→</b>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== 商品商城 ==================== -->
+    <section class="section shop-section" id="shop">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-tag">PET SHOP</span>
+            <h2>宠物商城</h2>
+            <p>精选宠物用品，让每一次购买都更放心。</p>
+          </div>
+
+          <button type="button" class="text-btn" id="viewAllProducts">
+            查看全部 →
+          </button>
+
+        </div>
+
+
+        <!-- 商品分类 -->
+        <div class="category-tabs">
+
+          <button type="button" class="category-tab active" data-category="全部">
+            全部
+          </button>
+
+          <button type="button" class="category-tab" data-category="狗狗">
+            🐶 狗狗
+          </button>
+
+          <button type="button" class="category-tab" data-category="猫咪">
+            🐱 猫咪
+          </button>
+
+          <button type="button" class="category-tab" data-category="零食">
+            🍖 零食
+          </button>
+
+          <button type="button" class="category-tab" data-category="玩具">
+            🧸 玩具
+          </button>
+
+          <button type="button" class="category-tab" data-category="用品">
+            🛍️ 用品
+          </button>
+
+        </div>
+
+
+        <!-- 商品搜索结果提示 -->
+        <div class="search-result-bar hidden" id="searchResultBar">
+
+          <span>
+            搜索结果：
+            <strong id="searchKeyword"></strong>
+          </span>
+
+          <button type="button" id="clearSearch">
+            清除搜索
+          </button>
+
+        </div>
+
+
+        <!-- 商品列表 -->
+        <div class="product-grid" id="productGrid">
+          <!-- JS 自动生成商品 -->
+        </div>
+
+
+        <div class="empty-state hidden" id="emptyProducts">
+          <div>🐾</div>
+          <h3>暂时没有找到相关商品</h3>
+          <p>换一个关键词或者看看其他分类吧。</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== 服务 ==================== -->
+    <section class="section services-section" id="services">
+
+      <div class="container">
+
+        <div class="section-heading center">
+
+          <div>
+            <span class="section-tag">PET SERVICES</span>
+            <h2>宠物服务</h2>
+            <p>专业护理，让毛孩子每天都舒舒服服。</p>
+          </div>
+
+        </div>
+
+
+        <div class="service-grid">
+
+          <article class="service-card">
+
+            <div class="service-image">🛁</div>
+
+            <div class="service-content">
+
+              <span>01</span>
+
+              <h3>宠物洗护</h3>
+
+              <p>
+                专业洗澡、吹毛、清洁耳朵、剪指甲等基础护理。
+              </p>
+
+              <div class="service-bottom">
+                <strong>¥39 起</strong>
+
+                <button
+                  type="button"
+                  class="service-book-btn"
+                  data-service="宠物洗护"
+                  data-price="39"
+                >
+                  立即预约
+                </button>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-image">✂️</div>
+
+            <div class="service-content">
+
+              <span>02</span>
+
+              <h3>宠物美容</h3>
+
+              <p>
+                根据宠物品种和需求提供专业美容造型服务。
+              </p>
+
+              <div class="service-bottom">
+                <strong>¥69 起</strong>
+
+                <button
+                  type="button"
+                  class="service-book-btn"
+                  data-service="宠物美容"
+                  data-price="69"
+                >
+                  立即预约
+                </button>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-image">🏠</div>
+
+            <div class="service-content">
+
+              <span>03</span>
+
+              <h3>宠物寄养</h3>
+
+              <p>
+                干净、安全、舒适的宠物寄养空间。
+              </p>
+
+              <div class="service-bottom">
+                <strong>¥50 / 天</strong>
+
+                <button
+                  type="button"
+                  class="service-book-btn"
+                  data-service="宠物寄养"
+                  data-price="50"
+                >
+                  立即预约
+                </button>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-image">❤️</div>
+
+            <div class="service-content">
+
+              <span>04</span>
+
+              <h3>基础护理</h3>
+
+              <p>
+                耳道清洁、指甲修剪、脚底毛修剪等护理服务。
+              </p>
+
+              <div class="service-bottom">
+                <strong>¥29 起</strong>
+
+                <button
+                  type="button"
+                  class="service-book-btn"
+                  data-service="基础护理"
+                  data-price="29"
+                >
+                  立即预约
+                </button>
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== 会员 ==================== -->
+    <section class="section member-section" id="member">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-tag">MEMBERSHIP</span>
+            <h2>会员中心</h2>
+            <p>成为会员，享受更多专属权益。</p>
+          </div>
+
+          <button type="button" class="text-btn" id="memberCenterButton">
+            进入会员中心 →
+          </button>
+
+        </div>
+
+
+        <div class="membership-grid">
+
+          <div class="membership-card">
+            <div class="membership-icon">🌱</div>
+            <h3>普通会员</h3>
+            <strong>95折</strong>
+            <p>注册即可成为会员</p>
+          </div>
+
+          <div class="membership-card">
+            <div class="membership-icon">🥈</div>
+            <h3>银卡会员</h3>
+            <strong>9折</strong>
+            <p>享受更多专属优惠</p>
+          </div>
+
+          <div class="membership-card">
+            <div class="membership-icon">🥇</div>
+            <h3>金卡会员</h3>
+            <strong>85折</strong>
+            <p>专属会员权益</p>
+          </div>
+
+          <div class="membership-card">
+            <div class="membership-icon">👑</div>
+            <h3>VIP会员</h3>
+            <strong>8折</strong>
+            <p>尊享最高会员权益</p>
+          </div>
+
+        </div>
+
+
+        <!-- 当前会员状态 -->
+        <div class="member-summary">
+
+          <div class="member-avatar">
+            👤
+          </div>
+
+          <div class="member-summary-info">
+
+            <span>当前会员</span>
+
+            <h3 id="memberDisplayName">
+              未登录
+            </h3>
+
+            <p id="memberDisplayLevel">
+              登录后查看会员等级
+            </p>
+
+          </div>
+
+          <div class="member-balance">
+
+            <span>账户余额</span>
+
+            <strong>
+              ¥<b id="memberBalance">0.00</b>
+            </strong>
+
+          </div>
+
+          <button
+            type="button"
+            class="primary-btn"
+            id="memberSummaryButton"
+          >
+            登录 / 查看
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== 储值 ==================== -->
+    <section class="section recharge-section" id="recharge">
+
+      <div class="container">
+
+        <div class="section-heading center">
+
+          <div>
+            <span class="section-tag">RECHARGE</span>
+            <h2>会员储值</h2>
+            <p>储值享赠送，购物和服务都可以使用。</p>
+          </div>
+
+        </div>
+
+
+        <div class="recharge-grid">
+
+          <button
+            type="button"
+            class="recharge-card"
+            data-recharge="200"
+            data-bonus="20"
+          >
+            <span>储值</span>
+            <strong>¥200</strong>
+            <em>赠 ¥20</em>
+          </button>
+
+          <button
+            type="button"
+            class="recharge-card"
+            data-recharge="500"
+            data-bonus="70"
+          >
+            <span>储值</span>
+            <strong>¥500</strong>
+            <em>赠 ¥70</em>
+          </button>
+
+          <button
+            type="button"
+            class="recharge-card"
+            data-recharge="1000"
+            data-bonus="180"
+          >
+            <span>储值</span>
+            <strong>¥1000</strong>
+            <em>赠 ¥180</em>
+          </button>
+
+          <button
+            type="button"
+            class="recharge-card featured"
+            data-recharge="2000"
+            data-bonus="400"
+          >
+            <span>储值</span>
+            <strong>¥2000</strong>
+            <em>赠 ¥400</em>
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== 关于我们 ==================== -->
+    <section class="section about-section" id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-image">
+          🐶 🐱
+        </div>
+
+        <div class="about-content">
+
+          <span class="section-tag">ABOUT PAW HOUSE</span>
+
+          <h2>
+            不只是宠物店，<br>
+            更是毛孩子的第二个家。
+          </h2>
+
+          <p>
+            Paw House 宠物之家致力于为宠物和宠物主人提供更加专业、
+            安心、舒适的服务。
+          </p>
+
+          <p>
+            从日常洗护、美容、寄养，到宠物用品和会员服务，
+            我们希望让养宠变得更加简单。
+          </p>
+
+          <div class="about-features">
+
+            <div>
+              <strong>✓</strong>
+              <span>专业护理</span>
+            </div>
+
+            <div>
+              <strong>✓</strong>
+              <span>安心寄养</span>
+            </div>
+
+            <div>
+              <strong>✓</strong>
+              <span>品质用品</span>
+            </div>
+
+            <div>
+              <strong>✓</strong>
+              <span>会员优惠</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================== 我的订单 ==================== -->
+    <section class="section orders-section" id="orders">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-tag">MY ORDERS</span>
+            <h2>我的订单</h2>
+            <p>查看商品购买和服务预约记录。</p>
+          </div>
+
+          <button type="button" class="text-btn" id="viewOrders">
+            查看全部 →
+          </button>
+
+        </div>
+
+
+        <div class="orders-empty" id="ordersEmpty">
+
+          <div>📦</div>
+
+          <h3>还没有订单</h3>
+
+          <p>
+            购买商品或预约服务后，订单会显示在这里。
+          </p>
+
+          <a href="#shop" class="primary-btn">
+            去逛商城
+          </a>
+
+        </div>
+
+
+        <div class="orders-list hidden" id="ordersList">
+          <!-- JS 自动生成 -->
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ==================== 页脚 ==================== -->
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+
+        <div class="logo footer-logo">
+          <span class="logo-icon">🐾</span>
+
+          <span>
+            <strong>Paw House</strong>
+            <small>宠物之家</small>
+          </span>
+        </div>
+
+        <p>
+          用心照顾每一个毛孩子。
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>快速导航</h4>
+
+        <a href="#home">首页</a>
+        <a href="#shop">宠物商城</a>
+        <a href="#services">服务预约</a>
+        <a href="#member">会员中心</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>客户服务</h4>
+
+        <a href="#orders">我的订单</a>
+        <a href="#member">会员权益</a>
+        <a href="#recharge">会员储值</a>
+        <a href="#about">关于我们</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>联系我们</h4>
+
+        <p>📞 400-000-0000</p>
+        <p>📍 Paw House 宠物之家</p>
+        <p>🕐 09:00 - 21:00</p>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <span>
+          © 2026 Paw House 宠物之家
+        </span>
+
+        <span>
+          用心服务每一位宠物主人
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================================================= -->
+  <!-- 商品详情弹窗 -->
+  <!-- ================================================= -->
+
+  <div class="modal hidden" id="productModal">
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-box product-modal-box">
+
+      <button type="button" class="modal-close" data-close="productModal">
+        ×
+      </button>
+
+      <div class="product-detail">
+
+        <div class="product-detail-image" id="detailImage">
+          🐾
+        </div>
+
+        <div class="product-detail-content">
+
+          <span class="product-category" id="detailCategory">
+            商品
+          </span>
+
+          <h2 id="detailName">
+            商品名称
+          </h2>
+
+          <p id="detailDescription">
+            商品介绍
+          </p>
+
+          <div class="product-detail-price">
+            ¥<strong id="detailPrice">0</strong>
+          </div>
+
+          <div class="quantity-control">
+
+            <button type="button" id="detailMinus">
+              −
+            </button>
+
+            <input
+              type="number"
+              id="detailQuantity"
+              value="1"
+              min="1"
+            >
+
+            <button type="button" id="detailPlus">
+              +
+            </button>
+
+          </div>
+
+          <button
+            type="button"
+            class="primary-btn full-btn"
+            id="detailAddCart"
+          >
+            加入购物车
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================================================= -->
+  <!-- 购物车 -->
+  <!-- ================================================= -->
+
+  <div class="side-panel hidden" id="cartPanel">
+
+    <div class="side-panel-header">
+
+      <div>
+        <h3>购物车</h3>
+        <span>
+          <b id="cartItemCount">0</b> 件商品
+        </span>
+      </div>
+
+      <button type="button" class="close-btn" id="closeCart">
+        ×
+      </button>
+
+    </div>
+
+
+    <div class="cart-body" id="cartBody">
+
+      <div class="cart-empty" id="cartEmpty">
+
+        <div>🛒</div>
+
+        <h3>购物车是空的</h3>
+
+        <p>去商城挑选一些商品吧。</p>
+
+        <a href="#shop" class="primary-btn" id="cartGoShop">
+          去购物
+        </a>
+
+      </div>
+
+
+      <div class="cart-items hidden" id="cartItems">
+        <!-- JS 自动生成 -->
+      </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-total-row">
+
+        <span>商品合计</span>
+
+        <strong>
+          ¥<b id="cartTotal">0.00</b>
+        </strong>
+
+      </div>
+
+      <button
+        type="button"
+        class="primary-btn full-btn"
+        id="checkoutButton"
+      >
+        去结算
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================================================= -->
+  <!-- 登录 / 注册 -->
+  <!-- ================================================= -->
+
+  <div class="modal hidden" id="loginModal">
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-box login-modal-box">
+
+      <button type="button" class="modal-close" data-close="loginModal">
+        ×
+      </button>
+
+
+      <div class="login-header">
+
+        <div class="login-logo">
+          🐾
+        </div>
+
+        <h2 id="loginTitle">
+          登录 Paw House
+        </h2>
+
+        <p id="loginSubtitle">
+          登录后享受会员专属服务
+        </p>
+
+      </div>
+
+
+      <!-- 登录 -->
+      <form id="loginForm">
+
+        <div class="form-group">
+
+          <label>手机号</label>
+
+          <input
+            type="tel"
+            id="loginPhone"
+            placeholder="请输入手机号"
+            maxlength="11"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>密码</label>
+
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="请输入密码"
+            required
+          >
+
+        </div>
+
+
+        <div class="login-options">
+
+          <label>
+            <input type="checkbox" id="rememberLogin">
+            记住我
+          </label>
+
+          <button type="button" id="forgotPassword">
+            忘记密码？
+          </button>
+
+        </div>
+
+
+        <button type="submit" class="primary-btn full-btn">
+          登录
+        </button>
+
+      </form>
+
+
+      <!-- 注册 -->
+      <form id="registerForm" class="hidden">
+
+        <div class="form-group">
+
+          <label>手机号</label>
+
+          <input
+            type="tel"
+            id="registerPhone"
+            placeholder="请输入手机号"
+            maxlength="11"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>验证码</label>
+
+          <div class="code-input">
+
+            <input
+              type="text"
+              id="registerCode"
+              placeholder="请输入验证码"
+              maxlength="6"
+              required
+            >
+
+            <button type="button" id="sendCode">
+              获取验证码
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>设置密码</label>
+
+          <input
+            type="password"
+            id="registerPassword"
+            placeholder="设置登录密码"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>确认密码</label>
+
+          <input
+            type="password"
+            id="registerPasswordConfirm"
+            placeholder="再次输入密码"
+            required
+          >
+
+        </div>
+
+
+        <button type="submit" class="primary-btn full-btn">
+          注册账号
+        </button>
+
+      </form>
+
+
+      <div class="login-switch">
+
+        <span id="loginSwitchText">
+          还没有账号？
+        </span>
+
+        <button type="button" id="switchLoginMode">
+          注册账号
+        </button>
+
+      </div>
+
+
+      <div class="login-divider">
+        <span>其他方式</span>
+      </div>
+
+
+      <button type="button" class="wechat-login-btn" id="wechatLogin">
+        💬 微信快捷登录
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================================================= -->
+  <!-- 服务预约 -->
+  <!-- ================================================= -->
+
+  <div class="modal hidden" id="bookingModal">
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-box">
+
+      <button type="button" class="modal-close" data-close="bookingModal">
+        ×
+      </button>
+
+      <div class="modal-title">
+
+        <span>🐾</span>
+
+        <div>
+          <h2>预约服务</h2>
+          <p>请填写宠物和预约信息</p>
+        </div>
+
+      </div>
+
+
+      <form id="bookingForm">
+
+        <div class="form-group">
+
+          <label>预约服务</label>
+
+          <select id="bookingService" required>
+
+            <option value="">
+              请选择服务
+            </option>
+
+            <option value="宠物洗护">
+              宠物洗护
+            </option>
+
+            <option value="宠物美容">
+              宠物美容
+            </option>
+
+            <option value="宠物寄养">
+              宠物寄养
+            </option>
+
+            <option value="基础护理">
+              基础护理
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="form-group">
+
+            <label>预约日期</label>
+
+            <input
+              type="date"
+              id="bookingDate"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>预约时间</label>
+
+            <select id="bookingTime" required>
+
+              <option value="">
+                请选择时间
+              </option>
+
+              <option value="09:00">
+                09:00
+              </option>
+
+              <option value="10:00">
+                10:00
+              </option>
+
+              <option value="11:00">
+                11:00
+              </option>
+
+              <option value="14:00">
+                14:00
+              </option>
+
+              <option value="15:00">
+                15:00
+              </option>
+
+              <option value="16:00">
+                16:00
+              </option>
+
+              <option value="17:00">
+                17:00
+              </option>
+
+              <option value="18:00">
+                18:00
+              </option>
+
+              <option value="19:00">
+                19:00
+              </option>
+
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>主人姓名</label>
+
+          <input
+            type="text"
+            id="ownerName"
+            placeholder="请输入您的姓名"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>联系电话</label>
+
+          <input
+            type="tel"
+            id="ownerPhone"
+            placeholder="请输入联系电话"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="form-group">
+
+            <label>宠物名字</label>
+
+            <input
+              type="text"
+              id="petName"
+              placeholder="例如：豆豆"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>宠物类型</label>
+
+            <select id="petType" required>
+
+              <option value="">
+                请选择
+              </option>
+
+              <option value="狗狗">
+                🐶 狗狗
+              </option>
+
+              <option value="猫咪">
+                🐱 猫咪
+              </option>
+
+              <option value="其他">
+                🐾 其他
+              </option>
+
+            </select>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>备注</label>
+
+          <textarea
+            id="bookingNote"
+            placeholder="如有特殊需求可以告诉我们"
+            rows="4"
+          ></textarea>
+
+        </div>
+
+
+        <button type="submit" class="primary-btn full-btn">
+          提交预约
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================================================= -->
+  <!-- 会员中心 -->
+  <!-- ================================================= -->
+
+  <div class="modal hidden" id="memberModal">
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-box member-modal-box">
+
+      <button type="button" class="modal-close" data-close="memberModal">
+        ×
+      </button>
+
+
+      <div class="member-profile">
+
+        <div class="member-big-avatar">
+          👤
+        </div>
+
+        <div>
+
+          <span>欢迎回来</span>
+
+          <h2 id="modalMemberName">
+            用户
+          </h2>
+
+          <p id="modalMemberLevel">
+            普通会员
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="member-balance-card">
+
+        <span>账户余额</span>
+
+        <strong>
+          ¥<b id="modalMemberBalance">0.00</b>
+        </strong>
+
+        <button type="button" id="memberRechargeButton">
+          立即储值
+        </button>
+
+      </div>
+
+
+      <div class="member-menu">
+
+        <button type="button" data-member-action="profile">
+          <span>👤</span>
+          <strong>个人资料</strong>
+          <b>›</b>
+        </button>
+
+        <button type="button" data-member-action="balance">
+          <span>💰</span>
+          <strong>余额明细</strong>
+          <b>›</b>
+        </button>
+
+        <button type="button" data-member-action="orders">
+          <span>📦</span>
+          <strong>我的订单</strong>
+          <b>›</b>
+        </button>
+
+        <button type="button" data-member-action="bookings">
+          <span>📅</span>
+          <strong>预约记录</strong>
+          <b>›</b>
+        </button>
+
+        <button type="button" data-member-action="level">
+          <span>👑</span>
+          <strong>会员等级</strong>
+          <b>›</b>
+        </button>
+
+      </div>
+
+
+      <button type="button" class="logout-btn" id="logoutButton">
+        退出登录
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================================================= -->
+  <!-- 储值 -->
+  <!-- ================================================= -->
+
+  <div class="modal hidden" id="rechargeModal">
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-box recharge-modal-box">
+
+      <button type="button" class="modal-close" data-close="rechargeModal">
+        ×
+      </button>
+
+      <div class="modal-title">
+
+        <span>💳</span>
+
+        <div>
+          <h2>会员储值</h2>
+          <p>选择储值金额，享受额外赠送</p>
+        </div>
+
+      </div>
+
+
+      <div class="recharge-options">
+
+        <button
+          type="button"
+          class="recharge-option"
+          data-recharge="200"
+          data-bonus="20"
+        >
+          <strong>¥200</strong>
+          <span>赠送 ¥20</span>
+        </button>
+
+        <button
+          type="button"
+          class="recharge-option"
+          data-recharge="500"
+          data-bonus="70"
+        >
+          <strong>¥500</strong>
+          <span>赠送 ¥70</span>
+        </button>
+
+        <button
+          type="button"
+          class="recharge-option"
+          data-recharge="1000"
+          data-bonus="180"
+        >
+          <strong>¥1000</strong>
+          <span>赠送 ¥180</span>
+        </button>
+
+        <button
+          type="button"
+          class="recharge-option"
+          data-recharge="2000"
+          data-bonus="400"
+        >
+          <strong>¥2000</strong>
+          <span>赠送 ¥400</span>
+        </button>
+
+      </div>
+
+
+      <div class="recharge-summary">
+
+        <div>
+          <span>实际支付</span>
+          <strong>
+            ¥<b id="rechargePay">0</b>
+          </strong>
+        </div>
+
+        <div>
+          <span>赠送金额</span>
+          <strong>
+            ¥<b id="rechargeBonus">0</b>
+          </strong>
+        </div>
+
+        <div>
+          <span>到账余额</span>
+          <strong>
+            ¥<b id="rechargeTotal">0</b>
+          </strong>
+        </div>
+
+      </div>
+
+
+      <button
+        type="button"
+        class="primary-btn full-btn"
+        id="confirmRecharge"
+      >
+        立即充值
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================================================= -->
+  <!-- 结算 -->
+  <!-- ================================================= -->
+
+  <div class="modal hidden" id="checkoutModal">
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-box checkout-modal-box">
+
+      <button type="button" class="modal-close" data-close="checkoutModal">
+        ×
+      </button>
+
+      <div class="modal-title">
+
+        <span>🛍️</span>
+
+        <div>
+          <h2>确认订单</h2>
+          <p>确认商品和收货信息</p>
+        </div>
+
+      </div>
+
+
+      <div class="checkout-items" id="checkoutItems">
+        <!-- JS 自动生成 -->
+      </div>
+
+
+      <div class="checkout-section">
+
+        <h3>收货信息</h3>
+
+        <div class="form-group">
+
+          <label>收货人</label>
+
+          <input
+            type="text"
+            id="checkoutName"
+            placeholder="请输入收货人姓名"
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>联系电话</label>
+
+          <input
+            type="tel"
+            id="checkoutPhone"
+            placeholder="请输入联系电话"
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>收货地址</label>
+
+          <textarea
+            id="checkoutAddress"
+            rows="3"
+            placeholder="请输入详细收货地址"
+          ></textarea>
+
+        </div>
+
+      </div>
+
+
+      <div class="checkout-section">
+
+        <h3>支付方式</h3>
+
+        <div class="payment-methods">
+
+          <label class="payment-method active">
+
+            <input
+              type="radio"
+              name="payment"
+              value="wechat"
+              checked
+            >
+
+            <span>💬</span>
+
+            <div>
+              <strong>微信支付</strong>
+              <small>微信安全支付</small>
+            </div>
+
+          </label>
+
+
+          <label class="payment-method">
+
+            <input
+              type="radio"
+              name="payment"
+              value="balance"
+            >
+
+            <span>💰</span>
+
+            <div>
+              <strong>会员余额</strong>
+              <small>使用账户余额支付</small>
+            </div>
+
+          </label>
+
+        </div>
+
+      </div>
+
+
+      <div class="checkout-total">
+
+        <span>订单合计</span>
+
+        <strong>
+          ¥<b id="checkoutTotal">0.00</b>
+        </strong>
+
+      </div>
+
+
+      <button
+        type="button"
+        class="primary-btn full-btn"
+        id="submitOrder"
+      >
+        提交订单
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ==================== 提示 ==================== -->
+  <div class="toast hidden" id="toast">
+    <span id="toastIcon">✓</span>
+    <span id="toastMessage">操作成功</span>
+  </div>
+
+
+</body>
+</html>
